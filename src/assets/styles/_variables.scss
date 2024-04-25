@@ -1,3 +1,20 @@
 @use "sass:color";
 
+// FUENTES DE LA PAGINA
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
 
+
+// COLORES DE LA PAGINA
+$appDiego-colorFondo: #FAFAFA;
+$appDiego-colorLetra--main: #020202;
+$appDiego-colorLetra--light: color.scale($appDiego-colorLetra--main, $lightness: 70%);
+
+$appDiego-corporate-rojo: #a20000;
+$appDiego-corporate-rojo--light: color.scale($appDiego-corporate-rojo, $lightness: 70%);
+$appDiego-corporate-verde: #00a200;
+$appDiego-corporate-verde--light: color.scale($appDiego-corporate-verde, $lightness: 70%);
+$appDiego-corporate-azul: #0000a2;
+$appDiego-corporate-azul--light: color.scale($appDiego-corporate-azul, $lightness: 70%);
