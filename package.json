@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.8.0",
+  "name": "app_diego",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Repositorio principal para el trabajo fin de grado de Diego Linares Ortiz. AppDiego",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -23,17 +23,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/Lainezz/tfg_appDiego.git" 
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Diego Linares",
+    "email": "dlinort062@g.educaand.es"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/Lainezz/tfg_appDiego/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/Lainezz/tfg_appDiego#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "autoprefixer": "^10.4.15",
