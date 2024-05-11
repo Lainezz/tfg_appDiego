@@ -7,10 +7,67 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $appDiego-colorFondo;
+  background-color: transparent;
   color: $appDiego-colorLetra--main;
+}
+
+a {
+  text-decoration: none;
+  color: $appDiego-colorLetra--main;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+}
+
+.max-height_centered {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.max-height_right {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+// ESTILOS DE LETRA
+.bold_bg_separada {
+
+  font-weight: bolder;
+  font-size: larger;
+  letter-spacing: .2rem;
+
+}
+
+
+// CAMBIAR EL Z-INDEX
+.z-10 {
+  z-index: 10;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.imagen-fondo {
+  /* background-image: url("../images/fondo1.png");
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: border-box; */
+
+  background: url("../images/fondo1.png") 0 0 / cover;
+  position: fixed;
+  z-index: -50;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
 }

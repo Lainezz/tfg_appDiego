@@ -1,10 +1,77 @@
 @use "sass:color";
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 // FUENTES DE LA PAGINA
 $font-family-sans-serif: Roboto, sans-serif;
 $font-family-serif: "Noto Serif", serif;
-$font-family-display: "Chakra Petch";
+$font-family-display: "Chakra Petch", sans-serif;
+
+@mixin chakra-petch-light {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin chakra-petch-light-italic {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin chakra-petch-regular {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin chakra-petch-regular-italic {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin chakra-petch-medium {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin chakra-petch-medium-italic {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@mixin chakra-petch-semibold {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin chakra-petch-semibold-italic {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin chakra-petch-bold {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin chakra-petch-bold-italic {
+  font-family: $font-family-display, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin bg-separada {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    line-height: normal;
+}
 
 
 // COLORES DE LA PAGINA
@@ -18,3 +85,7 @@ $appDiego-corporate-verde: #00a200;
 $appDiego-corporate-verde--light: color.scale($appDiego-corporate-verde, $lightness: 70%);
 $appDiego-corporate-azul: #0000a2;
 $appDiego-corporate-azul--light: color.scale($appDiego-corporate-azul, $lightness: 70%);
+$appDiego-corporate-morado: #9198e5;
+$appDiego-corporate-morado--light: color.scale($appDiego-corporate-morado, $lightness: 70%);
+$appDiego-corporate-naranja: #e66465;
+$appDiego-corporate-naranja--light: color.scale($appDiego-corporate-naranja, $lightness: 70%);
