@@ -26,15 +26,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      row-gap: 1rem;
 
-      .form-login__titulo {
+      .form-login__div-titulo {
         @include chakra-petch-bold;
         @include bg-separada;
       }
 
       .form-login__div-user-pass {
-        padding: 1rem 0 1rem 0;
+        /*         padding: 1rem 0 1rem 0; */
         min-width: 60%;
         display: flex;
         flex-direction: column;
@@ -77,35 +78,65 @@
         }
       }
 
-      .form-login__div-other-logins {
-        min-width: 50%;
+      .form-login__div-olvido-pass {
+        a {
+          transition: all 0.1s ease-out;
+        }
+
+        a:visited {
+          color: $appDiego-colorLetra--main;
+        }
+
+        a:hover {
+          transition: all 0.1s ease-out;
+          color: $appDiego-corporate-morado--light;
+        }
+
+        a:active {
+          color: $appDiego-corporate-morado;
+        }
+
+        
+      }
+
+      .form-login__div-boton-acceder {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        column-gap: .5rem;
-        background-color: antiquewhite;
+        justify-content: center;
 
-        .logo-social {
-            padding: .5rem 2rem .5rem 2rem;
-            border-radius: 1rem;
-            cursor: pointer;
+        
+
+        .boton-acceder__boton {
+          position: relative;
+          height: 6rem;
+          width: 6rem;
+
+          border: 1px solid $appDiego-colorLetra--main;
+          border-radius: 1rem;
+          cursor: pointer;
+
+          .link-hover {
+            border-radius: inherit;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: linear-gradient(
+              $appDiego-corporate-naranja,
+              $appDiego-corporate-morado
+            );
+
+            transition: all 0.3s ease-out;
+          }
         }
 
-        .div-other-logins__google {
-          border: 1px solid black;
-          background-color: white;
+        .boton-acceder__boton:hover .link-hover {
+          opacity: 0.3;
         }
-        .div-other-logins__fb {
-          border: 1px solid black;
-          background-color: rgb(24, 119, 242);
-        }
-        .div-other-logins__xbox {
-          border: 1px solid black;
-          background-color: rgb(16, 124, 16);
-        }
-        .div-other-logins__apple {
-          border: 1px solid black;
-          background-color: black;
+
+        .boton-acceder__boton:active {
+          border-color: $appDiego-colorLetra--main-2;
         }
       }
     }

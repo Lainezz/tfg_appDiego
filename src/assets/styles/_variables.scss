@@ -77,6 +77,7 @@ $font-family-display: "Chakra Petch", sans-serif;
 // COLORES DE LA PAGINA
 $appDiego-colorFondo: #FAFAFA;
 $appDiego-colorLetra--main: #020202;
+$appDiego-colorLetra--main-2: #0c0c0c;
 $appDiego-colorLetra--light: color.scale($appDiego-colorLetra--main, $lightness: 70%);
 
 $appDiego-corporate-rojo: #a20000;
@@ -89,3 +90,12 @@ $appDiego-corporate-morado: #9198e5;
 $appDiego-corporate-morado--light: color.scale($appDiego-corporate-morado, $lightness: 70%);
 $appDiego-corporate-naranja: #e66465;
 $appDiego-corporate-naranja--light: color.scale($appDiego-corporate-naranja, $lightness: 70%);
+
+$appDiego-corporate-fb: rgb(24, 119, 242);
+$appDiego-corporate-fb--light: color.scale($appDiego-corporate-fb, $lightness: 70%);
+$appDiego-corporate-xbox: rgb(16, 124, 16);
+$appDiego-corporate-xbox--light: color.scale($appDiego-corporate-xbox, $lightness: 70%);
+$appDiego-corporate-apple: black;
+$appDiego-corporate-apple--light: color.scale($appDiego-corporate-apple, $lightness: 70%);
+$appDiego-corporate-google: white;
+$appDiego-corporate-google--light: color.scale($appDiego-corporate-google, $lightness: 70%);
