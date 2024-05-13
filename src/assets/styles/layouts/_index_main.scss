@@ -1,0 +1,83 @@
+.body__main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //justify-content: center;
+
+  .main__caja-pj {
+    height: auto;
+    width: 110vh;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .main__caja-datos-pj {
+
+    height: 100vh;
+    width: 100vh;
+
+    position: relative;
+    top: -10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .datos-pj__nombre {
+      position: relative;
+
+      top: -3.9rem;
+      height: 7rem;
+      width: 50%;
+      padding: 1rem 0 1rem 0;
+
+      background: linear-gradient(
+        to right,
+        transparent 2%,
+        white 28%,
+        white 50%,
+        white 72%,
+        transparent 98%
+      );
+      //backdrop-filter: opacity(20%);
+      //box-shadow: inset 0px 0px 40px 40px #DBA632;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      .nombre__nombre-pj {
+        @include chakra-petch-bold;
+        @include bg-separada;
+      }
+
+      .nombre__alias-pj {
+        @include chakra-petch-medium;
+      }
+    }
+
+    .datos-pj__informacion {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      height: 50vh;
+      width: 100%;
+
+      .separador-vertical {
+        height: 100%;
+        width: 3px;
+        background: $appDiego-colorFondo;
+      }
+    }
+  }
+}

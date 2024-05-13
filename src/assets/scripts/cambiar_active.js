@@ -14,8 +14,10 @@ function cambiar_active_nav() {
     nav_items[0].classList.add("active");
   } else if (pagina == "/programacion.html") {
     nav_items[1].classList.add("active");
-  } else {
+  } else if (pagina == "/sobre_mi.html") {
     nav_items[2].classList.add("active");
+  } else {
+    nav_items[3].classList.add("active");
   }
 }
 

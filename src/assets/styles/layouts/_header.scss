@@ -32,7 +32,6 @@
     .zonaLogo__titulo {
       @include chakra-petch-bold;
       @include bg-separada;
-    
     }
   }
 
@@ -46,7 +45,7 @@
 
     .zonaNav__nav_item {
       position: relative;
-      padding: 2rem;
+      padding: 0 1rem 0 1rem;
 
       .link-hover {
         position: absolute;
@@ -62,6 +61,7 @@
         transition: all 0.3s ease-out;
       }
     }
+    
 
     .zonaNav__nav_item:hover .link-hover {
       opacity: 0.3;
