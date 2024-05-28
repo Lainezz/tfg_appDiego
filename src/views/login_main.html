@@ -3,19 +3,19 @@
     <section class="main-login__caja-login">
 
 
-        <form action="#" class="caja-login__form-login">
+        <form action="POST" id="form-login" class="caja-login__form-login">
             <div class="form-login__div-titulo">
                 <span>INICIAR SESIÓN</span>
             </div>
             <div class="form-login__div-user-pass">
                 <div class="div-user-pass__div-user">
-                    <label id="label-user" for="input-user" class="form-login__user-label">USUARIO</label>
-                    <input id="input-user" name="input-user" type="text" class="form-login__user-input"
+                    <label id="label_user" for="input_user" class="form-login__user-label">USUARIO</label>
+                    <input id="input_user" name="input_user" type="text" class="form-login__user-input"
                         placeholder="NOMBRE DE USUARIO">
                 </div>
                 <div class="div-user-pass__div-pass">
-                    <label id="label-pass" for="input-pass" class="form-login__pass-label">CONTRASEÑA</label>
-                    <input id="input-pass" name="input-pass" type="text" class="form-login__pass-input"
+                    <label id="label_pass" for="input_pass" class="form-login__pass-label">CONTRASEÑA</label>
+                    <input id="input_pass" name="input_pass" type="text" class="form-login__pass-input"
                         placeholder="CONTRASEÑA">
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 </a>
             </div>
             <div class="form-login__div-boton-acceder">
-                <button class="boton-acceder__boton" type="submit">
+                <button id="button-form-login" class="boton-acceder__boton" type="submit">
 
                     <img src="assets/images/flecha.png" alt="Enviar">
                     <div class="link-hover"></div>
@@ -35,3 +35,4 @@
         </form>
     </section>
 </main>
+<script type="module" src="./assets/scripts/login.js"></script>

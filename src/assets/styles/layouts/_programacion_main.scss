@@ -1,0 +1,92 @@
+.main__cuerpo_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+
+  .cuerpo_principal__section_gris {
+    // TAMAÑO
+    width: 50vw; // viewport width
+    //height: 80vh; // viewport height
+    aspect-ratio: 1.33 / 1;
+    overflow: hidden;
+
+    .section_gris__section_naranja {
+      width: 200%;
+      height: 100%;
+
+      display: flex;
+      transition: all 0.5s ease-out;
+
+      .section_naranja__div_azul1 {
+        width: calc(100% / 2);
+        height: 100%;
+      }
+      .section_naranja__div_azul2 {
+        width: calc(100% / 2);
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .cuerpo_principal__section_cards {
+    width: 50vw; // viewport width
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 5%;
+    row-gap: 10%;
+
+    .section_cards__card {
+      position: relative;
+      width: 20%;
+      //height: 150px;
+      aspect-ratio: 1.33 / 1;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      transition: all 0.5s ease-out;
+
+      .card__card_front,
+      .card__card_back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: aliceblue;
+        backface-visibility: hidden;
+
+        transition: all .3s ease-out;
+      }
+      .card__card_back {
+        transform: rotateY(180deg);
+      }
+
+      .card__card_front:hover,.card__card_back:hover {
+        filter: drop-shadow(0 0 12px $appDiego-corporate-morado);
+        transition: filter .3s ease-out;
+      }
+      .card__card_front:active {
+        transform: scale(98%);
+        transition: all .2s ease-out;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .card__active {
+      transform: rotateY(180deg);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.body__main_sobre_mi {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+
+  .main_sobre_mi__container {
+
+    width: 70%;
+    height: auto;
+
+    display: flex;
+
+    .container__div_image {
+
+      width: 60%;
+      min-width: 60%;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        transition: filter 1s ease-out, transform .1s ease-in;
+      }
+
+      a:hover img {
+        // drop-shadow(h-shadow v-shadow blur spread color)
+        filter: drop-shadow(8px 8px 10px $appDiego-corporate-morado);
+      }
+
+      a:active img {
+        transform: scale(99%);
+      }
+    }
+
+    .container__div_text {
+      width: 100%;
+
+      padding: 1rem 2rem 1rem 2rem;
+    }
+  }
+}
